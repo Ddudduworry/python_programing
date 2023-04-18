@@ -44,10 +44,10 @@ print(d2)
 print(d2['수강생'])
 print(len(d2))
 
-season = {1:'1월',2:'2월',3:'3월',4:'4월',5:'5월',6:'6월',7:'7월',8:'8월',9:'9월',10:'10월',11:'11월',12:'12월'}
+season = {10:'1월',20:'2월',30:'3월',40:'4월',50:'5월',60:'6월',70:'7월',80:'8월',90:'9월',100:'10월',110:'11월',120:'12월'}
 for i in season:print(season[i])
-for i in range(1,13):
-    print(season[i])
+for i in range(1,121):
+    print()
 
 #dictionary method
 print(season.keys())
@@ -63,3 +63,37 @@ for kim in season.keys():
 print("---------------------------")
 for i in season.values():
     print(i)
+print("---------------------------")
+print(season.items())
+for item in season.items():
+    print(item)
+    print(item[1])
+print("---------------------------")
+for k,v in season.items():
+    print(k)
+    print(v)
+print("---------------------------")
+for i in season:
+    print(i)
+    print(season[i])
+print("---------------------------")
+print("month.pop(10)",season.pop(10))#key값을 주고, 해당 item을 제거
+print(season.popitem()) #제일 마지막 item을 제거
+print(season)
+
+season.update({30:'March'})
+print(season)
+season.update({150:'15월'})
+
+seql =['a','b','c','d']
+seqt = tuple(seql)
+print(seqt)
+print(type(seqt))
+
+seql2 = list(seqt)
+print(seql2)
+print(type(seql2))
+
+seqd = dict(enumerate(seql))
+print(seqd)
+print(type(seqd))
