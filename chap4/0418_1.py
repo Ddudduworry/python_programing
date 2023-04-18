@@ -52,3 +52,14 @@ for i in range(1,13):
 #dictionary method
 print(season.keys())
 print(season.values())
+
+#for 조건:
+    #실행문
+print("---------------------------")
+for kim in season.keys():
+    print(season[i])
+    print("kim: ",kim)
+    print(season[kim])
+print("---------------------------")
+for i in season.values():
+    print(i)
