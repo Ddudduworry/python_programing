@@ -30,3 +30,24 @@ print(dict(zip(l10,zip(l11,l12))))
 
 print(list(enumerate(l11)))
 print(dict(enumerate(l11)))
+
+l21 = ['파이썬','C++','AI','JAVA','SPRING']
+l22 = [101,102,103,104,105]
+#dictionary로 만든다
+#for문
+#quit이 들어올때까지 계속 받는다.
+#input() => 강의명 입력
+#강의실을 알려줌
+l23 = (dict(zip(l21,l22)))
+print(l23)
+
+lecture = ['파이썬','C++','AI','JAVA','SPRING']
+space = [101,102,103,104,105]
+d = dict(zip(lecture,space))
+while True:
+    c=input("강의명을 쓰세요")
+    if c== "quit":
+       print("종료하겠음")
+       break
+    else :
+        print(d[c])
