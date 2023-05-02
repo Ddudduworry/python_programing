@@ -113,3 +113,19 @@ print(addone(100))
 
 #lambda parameter_name : parameter로 실행하는 문
 print((lambda x: x+1)(100))
+
+def mysum2(num1, num2) :
+    return num1 + num2
+
+print(mysum2(100,1000))
+print((lambda num1, num2 : num1 + num2)(100,1000))
+
+#map, filter
+lst1 = [1,2,3,4,5,6,7]
+print(list(map(lambda x : x+1,lst1)))
+print("----------------------------")
+#lambda num1, num2 : num1+num2
+lst1 = [1,2,3,4,5,6,7]
+lst2 = [1,2,3,4,5,6,7]
+plst = list(map(lambda x,y:x**y,lst1,lst2))
+print(plst)
