@@ -36,3 +36,5 @@ for i in range(2,10):
 
 dd= 'dgds'
 print(dd.count('d'))
+
+dd = "되는건가?"
